@@ -17,13 +17,13 @@ export default function Home() {
 
   // Loading animation...
   if (status === 'loading') {
-    return <h1>Loadd</h1>;
+    return <h1 className='text-white'>Loadd</h1>;
   }
 
   const spotifyApi = new SpotifyWebApi();
   spotifyApi.setAccessToken(session.accessToken);
   const playlist = spotifyApi.getUserPlaylists();
-  console.log(playlist);
+  //console.log(playlist);
 
   return (
     <>

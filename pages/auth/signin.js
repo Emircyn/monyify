@@ -16,7 +16,7 @@ function Signin({ providers }) {
     }
   }, [session]);
 
-  if (session) return <h1>Loadd</h1>;
+  if (session) return <h1 className='text-white'>Loadd</h1>;
 
   return (
     <div className='bg-black h-screen flex flex-col items-center pt-40 space-y-8'>
